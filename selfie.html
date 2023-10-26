@@ -1,0 +1,80 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>j mo portfolio</title>
+ <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> 
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-light justify-content-center">
+<ul class="navbar-nav">
+  <li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
+ <li class="nav-item"><a class="nav-link" href="glitch.html">glitch</a></li>
+ <li class="nav-item"><a class="nav-link" href="mashup.html">mashup</a></li>
+ <li class="nav-item"><a class="nav-link" href="minecraft.html">Minecraft</a></li>
+ <li class="nav-item"><a class="nav-link" href="3d.html">3d</a></li>
+ <li class="nav-item"><a class="nav-link" href="netart.html">net art</a></li>
+ <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">photos</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="jmo.jpg">jmo1</a></li>
+            <li><a class="dropdown-item" href="jmo.png">jmo2</a></li>
+            <li><a class="dropdown-item" href="#">jmo3</a></li>
+          </ul>
+        </li>
+
+</ul> 
+</nav>
+
+
+ <iframe src="gillian_selfie/index.html" height="606" width="606" class="mx-auto d-block" title="Iframe Example"></iframe> 
+
+<pre>
+
+function setup() {
+ createCanvas(600, 600); 
+}
+
+function draw() {
+background(248, 200, 220);
+ellipse(300, 300, 225, 275); //face
+  fill (237, 226, 218); //eye base color
+strokeWeight(0); // eye outline
+ellipse(255, 288, 50, 50);//outline of right eye
+ellipse(350, 288, 50, 50);// outline of left eye
+strokeWeight(0); // for everything
+  fill (23, 18, 15); //iris color
+ellipse(255, 285, 35, 45); // right iris
+ellipse(350, 285, 35, 45); // left iris
+  fill (217, 215, 215); // lower highlight color
+ellipse(263, 275, 10, 10); // right eye highlight
+ellipse(358, 275, 10, 10); // left eye highlight
+strokeWeight(0); // eye outline
+  fill (140, 108, 90)// highlight color
+ellipse(255, 295, 30, 20); // right big eye highlight
+ellipse(350, 295, 30, 20); // left big eye highlight
+    fill (18, 17, 16)// color for pupil
+ellipse(255, 285, 15, 25);//outline of right pupil
+ellipse(350, 285, 15, 25);// outline of left pupil
+  fill (242, 203, 174); //skin color
+ellipse(250, 280, 5, 5); // right tiny eye highlight
+ellipse(345, 280, 5, 5); // left tiny eye highlight
+  rect(230, 310, 150, 13); // coverup
+strokeWeight(1); // coverup outline
+line(235, 250, 265, 245)
+line(335, 245, 365, 250)
+}
+</pre>
+
+
+</div>
+</body>
+</html> 

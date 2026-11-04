@@ -1,6 +1,6 @@
-var img; //creates a variable for the image
+var img;
 var img2;
-var initials ='jim'; // your initials
+var initials ='jm'; // your initials
 var choice = '1'; // starting choice, so it is not empty
 var screenbg = 250; // off white background
 var lastscreenshot=61; // last screenshot never taken
@@ -10,9 +10,7 @@ function preload() {
 //  img = loadImage('cat.jpg');  // cat.jpg needs to be next to this .js file
 // you can link to an image on your github account
   img = loadImage('https://dma-git.github.io/images/rainbow.gif');
-  img2 = loadImage('https://dma-git.github.io/images/xcat.png');
-  
-  screenbg=img2;
+    img2 = loadImage('https://dma-git.github.io/images/kitty.png');
 }
 
 function setup() {
@@ -86,13 +84,9 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
     image(img, mouseX, mouseY, 50, 50);
     
   } else if (toolChoice == 'h' || toolChoice == 'H') { // g places the image we pre-loaded
-    image(img2, mouseX-25, mouseY-25, 50, 50);
+    image(img2, mouseX, mouseY, 50, 50);
     
   }
-  
-  
-  
-  
  }
  
 function testbox(r, g, b) {
@@ -108,7 +102,6 @@ function clear_print() {
 // this will do one of two things, x clears the screen by resetting the background
 // p calls the routine saveme, which saves a copy of the screen
   if (key == 'x' || key == 'X') {
-    background(250);
     background(screenbg); // set the screen back to the background color
   } else if (key == 'p' || key == 'P') {
      saveme();  // call saveme which saves an image of the screen

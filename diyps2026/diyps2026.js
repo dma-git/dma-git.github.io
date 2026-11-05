@@ -1,5 +1,6 @@
 var img;
 var img2;
+var crayon=100;
 var initials ='jm'; // your initials
 var choice = '1'; // starting choice, so it is not empty
 var screenbg = 250; // off white background
@@ -14,6 +15,7 @@ function preload() {
 }
 
 function setup() {
+  screenbg=img2;
 createCanvas(600, 600);  // canvas size
 background(screenbg);   // use our background screen color
 
@@ -51,8 +53,16 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
     stroke('black')
   } else if (toolChoice == '4') {
 
-    stroke(0, 0, 255);
+    stroke(10, 10, crayon);
+    crayon=crayon +10;
+    strokeWeight(10);
     line(mouseX, mouseY, pmouseX, pmouseY);
+    
+    strokeWeight(1);
+    stroke('black');
+    
+    
+    
   } else if (key == '5') { // this tool calls a function
     stroke(0, 0, 255);
     testbox(20, 20, 200);
@@ -102,6 +112,7 @@ function clear_print() {
 // this will do one of two things, x clears the screen by resetting the background
 // p calls the routine saveme, which saves a copy of the screen
   if (key == 'x' || key == 'X') {
+    background(250);
     background(screenbg); // set the screen back to the background color
   } else if (key == 'p' || key == 'P') {
      saveme();  // call saveme which saves an image of the screen
